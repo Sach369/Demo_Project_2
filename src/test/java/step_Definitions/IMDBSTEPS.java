@@ -18,8 +18,8 @@ public class IMDBSTEPS {
 	
 @Given("User is on home page")
 public void user_is_on_home_page() {
-	
-System.setProperty("webdriver.chrome.driver","C:\\Users\\sachi\\eclipse-workspace\\pushpa_demo\\Drivers\\chromedriver.exe");
+
+System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
     
   driver=(WebDriver) new ChromeDriver();
     lp=new IMDBPage(driver); 
